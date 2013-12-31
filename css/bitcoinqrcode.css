@@ -73,3 +73,12 @@ footer {
 	font-size: small;
 	margin-bottom: 100px;
 }
+
+#share {
+	float: right;
+}
+
+#share div {
+	display: inline-block;
+	width: 100px !important;
+}
