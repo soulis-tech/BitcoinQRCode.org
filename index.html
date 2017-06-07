@@ -24,19 +24,80 @@
 					<div class="large-9 columns">
 						<label for="address">Bitcoin address:</label>
 
-						<input id="address" type="text" placeholder="18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4">
+						<input id="address" type="text" placeholder="18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4"/>
 					</div>
 					<div class="large-3 columns">
 						<label for="size">Size (px):</label>
 
-						<input id="size" type="text" placeholder="250" value="250">
+						<input id="size" type="text" placeholder="250" value="250"/>
 					</div>
 				</div>
+				
+				<div id="adv" class="slide hidden togglee">
+				
+					<div class="row">
+						<div class="large-9 columns">
+						<label for="amount">Amount (BTC):</label>
+						<div class="row collapse">
+							<div class="small-1 large-1 columns">
+							  <span class="prefix"><input id="is_amount" type="checkbox"/></span>
+							</div>
+							<div class="small-11 large-11 columns">
+							  <input id="amount" type="text" placeholder="1" value="0"/>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-9 columns">
+							<label for="label">Label (identifier/name):</label>
+							 <div class="row collapse">
+								<div class="small-1 large-1 columns">
+								  <span class="prefix"><input id="is_label" type="checkbox"/></span>
+								</div>
+								<div class="small-11 large-11 columns">
+								  <input id="label" type="text" placeholder="Identifier or name"/>
+								</div>
+							  </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-9 columns">
+							<label for="msg">Message:</label>
+							 <div class="row collapse">
+								<div class="small-1 large-1 columns">
+								  <span class="prefix"><input id="is_msg" type="checkbox"/></span>
+								</div>
+								<div class="small-11 large-11 columns">
+								  <input id="msg" type="text" placeholder="Some message"/>
+								</div>
+							  </div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<a class="button toggle-link toggler">
+					<span>+ show advanced fields</span>
+					<span class="hidden">- hide advanced fields</span>
+				</a>
+				
 			</form>
 
 			<div id="qrcodes"></div>
 
 			<hr>
+			
+			<div>
+				<div class="row collapse">
+					<div class="small-3 large-2 columns">
+					  <span class="prefix">Readed with reader: </span>
+					</div>
+					<div class="small-9 large-10 columns">
+					  <input id="camera" type="text" readonly="readonly"/>
+					</div>
+				</div>
+			</div>
 
 			<footer>
 				<div id="share">
